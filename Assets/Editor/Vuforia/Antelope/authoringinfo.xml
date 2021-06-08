@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="14.0" toolVersion="9.8.5">
+<ModelTarget name="Antelope" targetId="f67e6093786f4bbfaa5f18df56174e23" version="11.1" toolVersion="9.8.5" bbox="-0.121573 -0.004146 -0.039183 0.141206 0.245448 0.033537" previewImage="f67e6093786f4bbfaa5f18df56174e23_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="Antelopes_assembly" assemblyId="6ed629fced9f4d69a70910411bc995af">
+<Part name="Antelope" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="0.00870784 0.0925988 0.539586" rotation="AD: 0.9999780853748114 0.052776010888233936 -0.13581293454225732 222.067" image="Antelope_viewpoint_0000.png" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>
