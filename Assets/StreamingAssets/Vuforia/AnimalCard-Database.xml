@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="AS" size="0.040000 0.061129" />
+    <ImageTarget name="ZCard" size="0.058000 0.085000" />
+    <ImageTarget name="YCard" size="0.058000 0.085000" />
+    <ImageTarget name="XCard" size="0.058000 0.085000" />
+    <ImageTarget name="WCard" size="0.058000 0.085000" />
+    <ImageTarget name="VCard" size="0.058000 0.085000" />
+    <ImageTarget name="UCard" size="0.058000 0.085000" />
+    <ImageTarget name="TCard" size="0.058000 0.085000" />
+    <ImageTarget name="SCard" size="0.058000 0.085000" />
+    <ImageTarget name="RCard" size="0.058000 0.085000" />
+    <ImageTarget name="QCard" size="0.058000 0.085000" />
+    <ImageTarget name="PCard" size="0.058000 0.085000" />
+    <ImageTarget name="OCard" size="0.058000 0.085000" />
+    <ImageTarget name="NCard" size="0.058000 0.085000" />
+    <ImageTarget name="MCard" size="0.058000 0.085000" />
+    <ImageTarget name="LCard" size="0.058000 0.085000" />
+    <ImageTarget name="KCard" size="0.058000 0.085000" />
+    <ImageTarget name="JCard" size="0.058000 0.085000" />
+    <ImageTarget name="ICard" size="0.058000 0.085000" />
+    <ImageTarget name="HCard" size="0.058000 0.085000" />
+    <ImageTarget name="GCard" size="0.058000 0.085000" />
+    <ImageTarget name="FCard" size="0.058000 0.085000" />
+    <ImageTarget name="ECard" size="0.058000 0.085000" />
+    <ImageTarget name="DCard" size="0.058000 0.085000" />
+    <ImageTarget name="CCard" size="0.058000 0.085000" />
+    <ImageTarget name="BCard" size="0.058000 0.085000" />
+    <ImageTarget name="ACard" size="0.058000 0.085000" />
     <ImageTarget name="AC" size="0.040000 0.061129" />
-    <ImageTarget name="AD" size="0.040000 0.061129" />
-    <ImageTarget name="AH" size="0.040000 0.061129" />
   </Tracking>
 </QCARConfig>
