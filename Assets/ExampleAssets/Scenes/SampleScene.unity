@@ -654,22 +654,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 151c5edc76ac3af4c9c904f4a533d2ae,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.03
+      value: 0.015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 151c5edc76ac3af4c9c904f4a533d2ae,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.03
+      value: 0.015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 151c5edc76ac3af4c9c904f4a533d2ae,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.03
+      value: 0.015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 151c5edc76ac3af4c9c904f4a533d2ae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 151c5edc76ac3af4c9c904f4a533d2ae,
         type: 3}
@@ -689,7 +689,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 151c5edc76ac3af4c9c904f4a533d2ae,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 151c5edc76ac3af4c9c904f4a533d2ae,
         type: 3}
@@ -823,7 +823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  StatusFilter: 2
   OnTargetFound:
     m_PersistentCalls:
       m_Calls: []
