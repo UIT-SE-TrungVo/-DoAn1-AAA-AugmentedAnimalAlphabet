@@ -4,7 +4,19 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/CardAR.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/CardList.unity
+    guid: 344a506ca9fc8e64283e3f2370dc1012
+  - enabled: 1
+    path: Assets/Scenes/AnimalInfo.unity
+    guid: ed952b880d107d748984f329789feff7
+  - enabled: 1
+    path: Assets/Scenes/AnimalAR.unity
+    guid: beb8acbd2d21d1a4a935b29a4038f40a
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}
