@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class AnimalCardImporter : MonoBehaviour
 {
     [SerializeField] Sprite[] arrCards;
+    //GameObject[] uiButton;
 
     // Start is called before the first frame update
     void Start()
@@ -29,12 +31,15 @@ public class AnimalCardImporter : MonoBehaviour
             GameObject uiButton = DefaultControls.CreateButton(uiResources);
             uiButton.transform.SetParent(this.transform);
             uiButton.GetComponentInChildren<Text>().text = "";
-            uiButton.GetComponent<Button>().onClick.AddListener(() => DisplayInfoScreen(i));
+            int index = i;
+            uiButton.GetComponent<Button>().onClick.AddListener(() => { ViewInfoScreen(index); });
         }
     }
 
-    void DisplayInfoScreen(int index)
+    void ViewInfoScreen(int index)
     {
-        Debug.Log(AnimalInfos.GetAnimalInfo(index));
+        Debug.Log("Request index" + index);
+        ChosenAnimal.Index = index;
+        SceneManager.LoadScene("AnimalInfo");
     }
 }

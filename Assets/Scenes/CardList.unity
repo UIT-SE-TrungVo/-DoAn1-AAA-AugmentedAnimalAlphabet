@@ -383,10 +383,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
+    m_FontSize: 30
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -394,7 +394,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: ' Animal Card AR'
 --- !u!222 &147871166
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -901,6 +901,7 @@ GameObject:
   - component: {fileID: 1199585577}
   - component: {fileID: 1199585576}
   - component: {fileID: 1199585578}
+  - component: {fileID: 1199585579}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -1004,6 +1005,19 @@ MonoBehaviour:
   - {fileID: 21300000, guid: edd812ec513ba2b418903dbbd7387938, type: 3}
   - {fileID: 21300000, guid: 2570d250974f2194aa3ca3d799b9c37f, type: 3}
   - {fileID: 21300000, guid: b7082274c120fc54794bb6ac293facc5, type: 3}
+--- !u!114 &1199585579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199585574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e9dea1df16b8340a87756585cb7f63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JSONFile: {fileID: 4900000, guid: a2f76a0e823edf441898448da63f4e1d, type: 3}
 --- !u!1 &1262480258
 GameObject:
   m_ObjectHideFlags: 0

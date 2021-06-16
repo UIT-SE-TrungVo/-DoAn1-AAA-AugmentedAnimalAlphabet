@@ -3,23 +3,31 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-static public class AnimalInfos
+public class AnimalInfos: MonoBehaviour
 {
-    static string[] animalDescription = { };
-    static string JSONFilePath = "animalDescription.json";
+    string[] animalDescription = null;
+    [SerializeField] TextAsset JSONFile;
+    Wrapper wrapper = null;
          
-    static public string GetAnimalInfo(int index)
+    public string GetAnimalInfo(int index)
     {
         //import JSON if this is the first call
-        if (animalDescription.Length == 0)
+        if (wrapper == null)
         {
-            TextAsset data = Resources.Load<TextAsset>(JSONFilePath);
-            Debug.Log(data.text);
-            Wrapper wrapper = JsonUtility.FromJson<Wrapper>(data.text);
-            animalDescription = wrapper.array;
+            if (JSONFile == null)
+            {
+                Debug.Log("Get data failed");
+                return null;
+            }
+            else
+            {
+                Debug.Log("OK" + JSONFile.text); 
+                wrapper = JsonUtility.FromJson<Wrapper>(JSONFile.text);
+                Debug.Log(wrapper.array.Length);
+                animalDescription = wrapper.array;
+            }
         }
-
-        return animalDescription[index];
+        return wrapper.array[index];
     }
 
     private class Wrapper
