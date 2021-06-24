@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 7dd06c7036bc20347a3e06b7744b403c
+  - enabled: 1
     path: Assets/Scenes/CardAR.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
@@ -14,9 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AnimalInfo.unity
     guid: ed952b880d107d748984f329789feff7
-  - enabled: 0
-    path: Assets/Scenes/AnimalAR.unity
-    guid: beb8acbd2d21d1a4a935b29a4038f40a
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}

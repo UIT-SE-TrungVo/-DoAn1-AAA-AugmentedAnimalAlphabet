@@ -19,6 +19,12 @@ public class SceneDirector : MonoBehaviour
 
     public void SwitchScene(string sceneName)
     {
+        Debug.Log("SWITCH TO SCREEN" + sceneName);
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }
