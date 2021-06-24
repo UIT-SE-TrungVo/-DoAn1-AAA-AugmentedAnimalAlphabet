@@ -5,7 +5,7 @@ using UnityEngine;
 public class LoadAnimal : MonoBehaviour
 {
     [SerializeField] GameObject[] animal;
-    [SerializeField] int index = -1;
+    int index = -1;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +24,7 @@ public class LoadAnimal : MonoBehaviour
                 Destroy(obj.gameObject);
             }
             GameObject newAnimal = Instantiate(animal[index], this.transform.position, Quaternion.identity, this.transform);
+            newAnimal.transform.localScale = new Vector3(20, 20, 20);
         }
     }
 }
