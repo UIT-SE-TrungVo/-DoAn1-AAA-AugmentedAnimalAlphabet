@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class CameraRotation : MonoBehaviour
 {
-    const float speed = 50;
-    const float DISTANCE = 50;
-    float oldMouseY;
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -18,19 +13,17 @@ public class CameraRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 mouse = Input.mousePosition;
-        if (Input.GetMouseButtonDown(0))
+        if (Input.touchCount == 1)
         {
-            oldMouseY = mouse.y;
+            // GET TOUCH 0
+            Touch touch0 = Input.GetTouch(0);
+
+            // APPLY ROTATION
+            if (touch0.phase == TouchPhase.Moved)
+            {
+                this.transform.Rotate(0f, touch0.deltaPosition.x, 0f);
+            }
+
         }
-        else if (Input.GetMouseButton(0))
-        {
-            float distance = mouse.y - oldMouseY;
-            oldMouseY = mouse.y;
-            //if (distance > DISTANCE) distance = DISTANCE;
-            float offset = distance / DISTANCE;
-            Debug.Log("Offset y" + offset);
-            this.transform.Rotate(0, -offset * speed, 0);
-        } 
     }
 }

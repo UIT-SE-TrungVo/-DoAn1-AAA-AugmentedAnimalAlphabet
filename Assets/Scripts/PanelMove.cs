@@ -28,14 +28,7 @@ public class PanelMove : MonoBehaviour
             curOffset -= offset;
             this.GetComponent<RectTransform>().Translate(Vector3.right * offset);
         }
-    }
-
-    public void changeOffset()
-    {
-        index = 1 - index;
-        curOffset = OFFSET[index] - this.GetComponent<RectTransform>().localPosition.x;
-        Button button = this.GetComponentInParent<Button>();
-        if (uiText.text == "HIDE")
+        if (index != 0)
         {
             uiText.text = "SHOW ANIMAL INFO";
         }
@@ -45,5 +38,10 @@ public class PanelMove : MonoBehaviour
         }
     }
 
-
+    public void changeOffset()
+    {
+        index = 1 - index;
+        curOffset = OFFSET[index] - this.GetComponent<RectTransform>().localPosition.x;
+        Button button = this.GetComponentInParent<Button>();
+    }
 }

@@ -15,17 +15,17 @@ public class BackgroundSelector : MonoBehaviour
         0//A
         ,1//B
         ,1//C
-        ,2//D
+        ,0//D
         ,0//E
-        ,1//F
-        ,1//G
+        ,0//F
+        ,0//G
         ,0//H
         ,0//I
         ,0//J
         ,0//K
         ,0//L
         ,1//M
-        ,1//N
+        ,2//N
         ,0//O
         ,1//P
         ,1//Q
