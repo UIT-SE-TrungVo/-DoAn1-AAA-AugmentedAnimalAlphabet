@@ -9,7 +9,7 @@ public class PanelMove : MonoBehaviour
     [SerializeField] Text uiText;
     int speed = 1248;
 
-    float[] OFFSET = { 0, 1248 };
+    float[] OFFSET = { 0, 1920 };
     int index = 0;
     float curOffset = 0;
 
